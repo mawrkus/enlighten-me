@@ -10,7 +10,7 @@ function loadQuotes() {
 }
 
 function pickOne(quotes) {
-  const rnd = Math.floor(Math.random() * (quotes.length + 1));
+  const rnd = Math.floor(Math.random() * quotes.length);
   return quotes[rnd];
 }
 
