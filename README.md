@@ -5,7 +5,7 @@ A collection of enlightening quotes from [Yogi tea](https://www.yogiproducts.com
 ## Install
 
 ```bash
-npm install -g enligthen-me
+npm install -g enlighten-me
 ```
 
 ## Usage
