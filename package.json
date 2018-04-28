@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "prerelease": "npm version && git push --tags",
-    "release": "npm login && npm publish"
+    "release": "npm login && npm publish",
+    "pick": "node index.js",
+    "analyze": "node analyze.js > analysis.json"
   },
   "author": "mawrkus",
   "license": "MIT",
