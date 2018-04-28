@@ -1,6 +1,6 @@
 {
   "name": "enlighten-me",
-  "version": "0.1.6",
+  "version": "0.2.0",
   "description": "A collection of enlightening quotes from Yogi tea",
   "main": "index.js",
   "scripts": {
