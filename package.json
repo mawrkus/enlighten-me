@@ -4,9 +4,8 @@
   "description": "A collection of enlightening quotes from Yogi tea",
   "main": "index.js",
   "scripts": {
-    "release": "npm version -m \"New version: %s\"",
-    "postrelease": "npm run push && npm publish",
-    "push": "git push origin master && git push origin --tags"
+    "prerelease": "npm version && git push --tags",
+    "release": "npm login && npm publish"
   },
   "author": "mawrkus",
   "license": "MIT",
