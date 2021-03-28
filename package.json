@@ -1,6 +1,6 @@
 {
   "name": "enlighten-me",
-  "version": "0.4.3",
+  "version": "0.4.4",
   "description": "A collection of enlightening quotes from Yogi tea",
   "main": "quotes.json",
   "bin": "bin/index.js",
