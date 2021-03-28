@@ -13,3 +13,9 @@ npm install -g enlighten-me
 ```bash
 enlighten-me
 ```
+
+or with [npx](https://nodejs.dev/learn/the-npx-nodejs-package-runner):
+
+```bash
+npx enlighten-me
+```
