@@ -2,13 +2,13 @@
   "name": "enlighten-me",
   "version": "0.4.3",
   "description": "A collection of enlightening quotes from Yogi tea",
-  "main": "index.js",
-  "bin": "index.js",
+  "main": "quotes.json",
+  "bin": "bin/index.js",
   "scripts": {
     "release": "npm version -m \"New version: %s\"",
     "postrelease": "npm run push && npm publish",
     "push": "git push origin master && git push origin --tags",
-    "pick": "node index.js",
+    "pick": "node bin/index.js",
     "analyze": "node analyze.js > analysis.json"
   },
   "author": "mawrkus",
