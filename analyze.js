@@ -4,19 +4,24 @@ const blacklistedTerms = {
   a: true,
   an: true,
   and: true,
-  are: true,
+  as: true,
+  by: true,
+  for: true,
+  in: true,
   is: true,
   it: true,
   of: true,
+  that: true,
   the: true,
   to: true,
+  with: true,
 };
 
 function analyseTerms({ quotes }) {
   const quotesCount = quotes.length;
 
   const termsOccurences = quotes.reduce((acc, quote) => {
-    const terms = quote
+    quote
       .replace(/,|;|\./g, '')
       .toLowerCase()
       .split(' ')
@@ -34,7 +39,7 @@ function analyseTerms({ quotes }) {
   uniqueTerms = uniqueTerms.map((term) => ({
     term,
     occurences: termsOccurences[term],
-    frequency: (termsOccurences[term] / uniqueTermsCount).toFixed(3),
+    frequency: (termsOccurences[term] * 100 / uniqueTermsCount).toFixed(2),
   }))
   .sort((a, b) => b.occurences - a.occurences);
 
