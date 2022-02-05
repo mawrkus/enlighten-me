@@ -1,20 +1,21 @@
 const quotes = require('./quotes');
 
 const blacklistedTerms = {
-  a: true,
-  an: true,
-  and: true,
-  as: true,
-  by: true,
-  for: true,
-  in: true,
-  is: true,
-  it: true,
-  of: true,
-  that: true,
-  the: true,
-  to: true,
-  with: true,
+  'a': true,
+  'an': true,
+  'and': true,
+  'as': true,
+  'by': true,
+  'for': true,
+  'in': true,
+  'is': true,
+  'it': true,
+  'it\'s': true,
+  'of': true,
+  'that': true,
+  'the': true,
+  'to': true,
+  'with': true,
 };
 
 function analyseTerms({ quotes }) {
@@ -22,7 +23,7 @@ function analyseTerms({ quotes }) {
 
   const termsOccurences = quotes.reduce((acc, quote) => {
     quote
-      .replace(/,|;|\./g, '')
+      .replace(/,|;|\.|\?/g, '')
       .toLowerCase()
       .split(' ')
       .forEach((term) => {

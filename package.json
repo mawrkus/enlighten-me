@@ -9,7 +9,7 @@
     "postrelease": "npm run push && npm publish",
     "push": "git push origin master && git push origin --tags",
     "pick": "node bin/index.js",
-    "analyze": "node analyze.js > analysis.json"
+    "analyze": "node analyze.js > ./analysis.json"
   },
   "author": "mawrkus",
   "license": "MIT",
