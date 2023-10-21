@@ -1,21 +1,22 @@
 {
-  "name": "enlighten-me",
-  "version": "0.7.0",
-  "description": "A collection of enlightening quotes from Yogi tea",
-  "main": "quotes.json",
-  "bin": "bin/index.js",
-  "scripts": {
-    "release": "npm version -m \"New version: %s\"",
-    "postrelease": "npm run push && npm publish",
-    "push": "git push origin master && git push origin --tags",
-    "pick": "node bin/index.js",
-    "analyze": "node analyze.js > ./analysis.json"
-  },
-  "author": "mawrkus",
-  "license": "MIT",
-  "homepage": "https://github.com/mawrkus/enlighten-me",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/mawrkus/enlighten-me.git"
-  }
+	"name": "enlighten-me",
+	"version": "0.7.0",
+	"description": "A collection of enlightening quotes from Yogi tea",
+	"main": "quotes.json",
+	"bin": "bin/index.js",
+	"scripts": {
+		"release": "npm version -m \"New version: %s\"",
+		"postrelease": "npm run push && npm publish",
+		"push": "git push origin master && git push origin --tags",
+		"pick": "node bin/index.js",
+		"analyze": "node analyze.js > ./analysis.json",
+		"postinstall": "npm run pick"
+	},
+	"author": "mawrkus",
+	"license": "MIT",
+	"homepage": "https://github.com/mawrkus/enlighten-me",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/mawrkus/enlighten-me.git"
+	}
 }
